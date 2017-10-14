@@ -1,5 +1,0 @@
-C:\Users\andre_000\Desktop\Personal\Penumbra\Asvarduil.Penumbra\Asvarduil.Penumbra.UnixCore\bin\Debug\Asvarduil.Penumbra.UnixCore.dll
-C:\Users\andre_000\Desktop\Personal\Penumbra\Asvarduil.Penumbra\Asvarduil.Penumbra.UnixCore\bin\Debug\Asvarduil.Penumbra.UnixCore.pdb
-C:\Users\andre_000\Desktop\Personal\Penumbra\Asvarduil.Penumbra\Asvarduil.Penumbra.UnixCore\obj\Debug\Asvarduil.Penumbra.UnixCore.dll
-C:\Users\andre_000\Desktop\Personal\Penumbra\Asvarduil.Penumbra\Asvarduil.Penumbra.UnixCore\obj\Debug\Asvarduil.Penumbra.UnixCore.pdb
-C:\Users\andre_000\Desktop\Personal\Penumbra\Asvarduil.Penumbra\Asvarduil.Penumbra.UnixCore\obj\Debug\Asvarduil.Penumbra.UnixCore.csprojResolveAssemblyReference.cache
