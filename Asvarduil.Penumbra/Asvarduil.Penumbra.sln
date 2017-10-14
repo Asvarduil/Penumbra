@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asvarduil.Penumbra", "Asvarduil.Penumbra\Asvarduil.Penumbra.csproj", "{AB99087E-3F4E-477C-B7A4-5E98EDC64CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asvarduil.Penumbra.Services", "Asvarduil.Penumbra.Services\Asvarduil.Penumbra.Services.csproj", "{C0BA6D87-D94C-4823-8CE0-7B805F18C1DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asvarduil.Penumbra.DataCore", "Asvarduil.Penumbra.DataCore\Asvarduil.Penumbra.DataCore.csproj", "{9789A752-9426-4288-BAD3-BB4D771A899F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asvarduil.Penumbra.Tests", "Asvarduil.Penumbra.Tests\Asvarduil.Penumbra.Tests.csproj", "{4636A0F3-B8BD-4A7D-A2F9-3F7549D43D05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asvarduil.Penumbra.StarMadeCore", "Asvarduil.Penumbra.StarMadeCore\Asvarduil.Penumbra.StarMadeCore.csproj", "{9F673A5A-B522-4E8E-942B-AA659CD864EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB99087E-3F4E-477C-B7A4-5E98EDC64CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB99087E-3F4E-477C-B7A4-5E98EDC64CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB99087E-3F4E-477C-B7A4-5E98EDC64CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB99087E-3F4E-477C-B7A4-5E98EDC64CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BA6D87-D94C-4823-8CE0-7B805F18C1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BA6D87-D94C-4823-8CE0-7B805F18C1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BA6D87-D94C-4823-8CE0-7B805F18C1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BA6D87-D94C-4823-8CE0-7B805F18C1DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9789A752-9426-4288-BAD3-BB4D771A899F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9789A752-9426-4288-BAD3-BB4D771A899F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9789A752-9426-4288-BAD3-BB4D771A899F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9789A752-9426-4288-BAD3-BB4D771A899F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4636A0F3-B8BD-4A7D-A2F9-3F7549D43D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4636A0F3-B8BD-4A7D-A2F9-3F7549D43D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4636A0F3-B8BD-4A7D-A2F9-3F7549D43D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4636A0F3-B8BD-4A7D-A2F9-3F7549D43D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F673A5A-B522-4E8E-942B-AA659CD864EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F673A5A-B522-4E8E-942B-AA659CD864EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F673A5A-B522-4E8E-942B-AA659CD864EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F673A5A-B522-4E8E-942B-AA659CD864EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
