@@ -52,13 +52,9 @@ namespace Asvarduil.Penumbra.StarMadeCore
         private Process _starMadeProcess;
         private StreamWriter _processInput;
 
+        private string StarMadeShellCmd => SettingsService.ReadEnvironment("StarMade Shell Command", true);
         private string StarMadePathCmd => SettingsService.ReadEnvironment("StarMade Path Command", true);
         private string StarMadeRunCmd => SettingsService.ReadEnvironment("StarMade Run Command", true);
-
-        private List<IChatCommand> RegisteredCommands = new List<IChatCommand>
-        {
-
-        };
 
         #endregion Variables / Properties
 
@@ -79,10 +75,8 @@ namespace Asvarduil.Penumbra.StarMadeCore
 
         public void OpenCommandPrompt()
         {
-            var shellCommand = SettingsService.ReadEnvironment("StarMade Shell Command", true);
-
             var processInfo = new ProcessStartInfo();
-            processInfo.FileName = shellCommand;
+            processInfo.FileName = StarMadeShellCmd;
             processInfo.RedirectStandardInput = true;
             processInfo.RedirectStandardOutput = true;
             processInfo.RedirectStandardError = true;
