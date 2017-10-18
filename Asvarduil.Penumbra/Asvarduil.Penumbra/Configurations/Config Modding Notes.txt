@@ -1,0 +1,58 @@
+﻿Server.cfg:
+-----------
+Denote all touched settings with +, settings that should be explicitly ignored with -.
+
++ SECTOR_SIZE                     (default value: 4000 m3/sector) - Changes how large individual sectors of a system are.
++ FLEET_OUT_OF_SECTOR_MOVEMENT    (default value: 6000 ms/sector) - How long does it take a fleet to cross a single sector?
+                                                                    Increased, due to increased sector size.  Increase should be proportional to sector size.
++ DEFAULT_BLUEPRINT_ENEMY_USE     (default value: true)           - If true, blueprints are usable by random enemies by default.
+                                                                    This often annoys players so I turned it off.
+                                                                    Players can override this on a blueprint-by-blueprint basis.
++ DEFAULT_BLUEPRINT_OTHERS_BUY    (default value: true)           - If true, people outside of the uploaders faction can buy a blueprint.
++ DEFAULT_BLUEPRINT_HOME_BASE_BUY (default value: true)           - ...Not really sure, but I turned it off.
++ THRUST_SPEED_LIMIT              (default value: 150 m/s)        - Maximum thrust.  Reduced due to smaller ship sizes.
+                                                                    This was discussed on the MicroMade thread.  I expect this will be a constant source of editing...
++ SERVER_LIST_NAME                (default value: NoName)         - Publicly broadcast server name.
++ SERVER_LIST_DESCRIPTION         (default value: NoDescription)  - Publicly broadcast server description.
++ MAX_CLIENTS                     (default value: 8)              - Maximum number of clients who can connect to the server.
++ NT_BLOCK_QUEUE_SIZE             (default value: 1024 b/u)       - Determines how many blocks are sent per update.  Big numbers load more blocks, but hurt performance.  
+                                                                    Smaller numbers make big structures load more slowly.  Should be a power of two?
+                                                                    Decreased to help clients with weaker systems.  Will edit as needed.
++ MAX_CHAIN_DOCKING               (default value: 25)             - Maximum amount of entities that can be docked in a single chain.  
+                                                                    Decreased for performance reasons.
+- BATTLE_MODE_CONFIG              --                              - Ignore this, it's for a PvP-only mode, which I'm not doing.
+
+Gameconfig.xml:
+---------------
+All identifiers are XPaths, in the event that XML needs to be scanned.
+
+/GameConfig/StartingGear/Credits (default value: 20000 cr)        - How many credits a newbie starts with.  Decreased to zero.
+
+/GameConfig/StartingGear/Block - Adds default blocks to the player inventory.
+    Id is the block ID to grant
+    Count is the number of blocks to grant
+    Slot is either 'hotbar' or 'inventory'.
+
+/GameConfig/StartingGear/Tool - Adds tools to the player inventory.
+    SubId is the tool's ID
+    Slot is either 'hotbar' or 'inventory'
+
+/GameConfig/StartingGear/Helmet - It's a hat! >:|
+
+/GameConfig/StartingGear/Logbook - Adds a logbook to the player inventory.
+    Message is the starting contents of the logbook.
+    Slot is either 'hotbar' or 'inventory'
+
+! ! ! EXPERIMENTAL/UNKNOWN ! ! !
+/GameConfig/ShipMassLimit (Does this exist?)
+    Per conversation with Tunk, mass limits for ships and stations can be implemented in Gameconfig.xml.
+    Is this the right tag?
+
+/GameConfig/StationMassLimit (Does this exist?)
+    See above.
+
+customBlockBehaviorConfigTemplate.xml:
+--------------------------------------
+Block Behavior configuration lets one change how weapons behave.
+
+(Analysis in progress)
