@@ -1,89 +1,46 @@
 <GameConfig>
+  <ShipMassLimit>100</ShipMassLimit>
+  <StationMassLimit>10000</StationMassLimit>
+  
+  <StartingGear>
+    <Credits>0</Credits>
 
-	<StartingGear>
-		<Credits>20000</Credits>
-		
-		<Block>
-			<Id>5</Id> <!-- hull -->
-			<Count>30</Count>
-			<Slot>hotbar</Slot>
-		</Block>
-		<Block>
-			<Id>2</Id> <!-- power -->
-			<Count>10</Count>
-			<Slot>hotbar</Slot>
-		</Block>
-		<Block>
-			<Id>8</Id>  <!-- thruster -->
-			<Count>8</Count>
-			<Slot>hotbar</Slot>
-		</Block>
-		<Block>
-			<Id>6</Id>  <!-- cannon computer -->
-			<Count>1</Count>
-			<Slot>hotbar</Slot>
-		</Block>
-		<Block>
-			<Id>16</Id>  <!-- cannon barrels -->
-			<Count>15</Count>
-			<Slot>hotbar</Slot>
-		</Block>
-		
-		<Block>
-			<Id>1</Id>  <!-- core -->
-			<Count>1</Count>
-			<Slot>inventory</Slot>
-		</Block>
-		<Block>
-			<Id>4</Id>  <!-- salvage computer -->
-			<Count>1</Count>
-			<Slot>inventory</Slot>
-		</Block>
-		<Block>
-			<Id>24</Id> <!-- salvage modules -->
-			<Count>5</Count>
-			<Slot>inventory</Slot>
-		</Block>
-		
-		<Tool>
-			<SubId>1</SubId> <!-- laser -->
-			<Slot>inventory</Slot>
-		</Tool>
-		<Tool>
-			<SubId>2</SubId> <!-- heal -->
-			<Slot>inventory</Slot>
-		</Tool>
-		<Tool>
-			<SubId>3</SubId> <!-- power supply -->
-			<Slot>inventory</Slot>
-		</Tool>
-		<Tool>
-			<SubId>4</SubId> <!-- marker -->
-			<Slot>inventory</Slot>
-		</Tool>
-		
-		<Helmet>
-			<Slot>inventory</Slot>
-		</Helmet>
-		
-		<Logbook>
-			<Message>Personal Logbook</Message>
-			<Slot>inventory</Slot>
-		</Logbook>
-		
-		<!-- uncomment and edit the following to give the player a blueprint at the start -->
-		<!-- 
+    <Tool>
+      <SubId>1</SubId>
+      <!-- laser -->
+      <Slot>hotbar</Slot>
+    </Tool>
+    <Tool>
+      <SubId>2</SubId>
+      <!-- heal -->
+      <Slot>hotbar</Slot>
+    </Tool>
+    <Tool>
+      <SubId>4</SubId>
+      <!-- marker -->
+      <Slot>hotbar</Slot>
+    </Tool>
+
+    <Helmet>
+      <Slot>inventory</Slot>
+    </Helmet>
+
+    <Logbook>
+      <Message>
+        Welcome to MicroMade!\r\n
+        List of commands coming soon.
+      </Message>
+      <Slot>inventory</Slot>
+    </Logbook>
+
+    <!-- uncomment and edit the following to give the player a blueprint at the start -->
+    <!-- 
 		<Blueprint>
 			<Name>Isanth Type-Zero C-</Name>
 			<Filled>true</Filled>
 			<Slot>inventory</Slot>
 		</Blueprint>
 		 -->
-		
-	</StartingGear>
 
-	
-
+  </StartingGear>
 </GameConfig>
-        
-        
