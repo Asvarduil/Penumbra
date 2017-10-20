@@ -60,8 +60,8 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Configurations\Default\server.cfg" />
     <None Include="Configurations\Modded\server.cfg" />
+    <None Include="Configurations\Default\server.cfg" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +85,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Configurations\Config Modding Notes.txt" />
     <Content Include="Configurations\Default\admins.txt" />
     <Content Include="Configurations\Default\customBlockBehaviorConfig\customBlockBehaviorConfigHOWTO.txt" />
     <Content Include="Configurations\Default\customBlockBehaviorConfig\customBlockBehaviorConfigTemplate.xml" />
@@ -92,7 +93,9 @@
     <Content Include="Configurations\Default\customBlockConfig\BlockConfigImportTemplate.xml" />
     <Content Include="Configurations\Default\customFactionConfig\customFactionConfigHOWTO.txt" />
     <Content Include="Configurations\Default\customFactionConfig\FactionConfigTemplate.xml" />
-    <Content Include="Configurations\Default\GameConfig.xml" />
+    <Content Include="Configurations\Default\GameConfig.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Configurations\Modded\admins.txt" />
     <Content Include="Configurations\Modded\customBlockBehaviorConfig\customBlockBehaviorConfigHOWTO.txt" />
     <Content Include="Configurations\Modded\customBlockBehaviorConfig\customBlockBehaviorConfigTemplate.xml" />

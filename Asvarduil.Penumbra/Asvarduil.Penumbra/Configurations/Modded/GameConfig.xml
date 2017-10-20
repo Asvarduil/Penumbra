@@ -1,7 +1,4 @@
-<GameConfig>
-  <ShipMassLimit>100</ShipMassLimit>
-  <StationMassLimit>10000</StationMassLimit>
-  
+<GameConfig> 
   <StartingGear>
     <Credits>0</Credits>
 
@@ -43,4 +40,11 @@
 		 -->
 
   </StartingGear>
+
+  <ShipLimits>
+    <Mass>100</Mass>
+  </ShipLimits>
+  <StationLimits>
+    <Mass>10000</Mass>
+  </StationLimits>
 </GameConfig>
