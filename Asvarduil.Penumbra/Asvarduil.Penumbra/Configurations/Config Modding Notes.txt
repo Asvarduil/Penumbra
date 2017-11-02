@@ -63,6 +63,20 @@ Mass denotes the max mass an entity can have.
 /GameConfig/PlanetLimits/Mass - Determine mass limit for planets.
 /GameConfig/StationLimits/Mass - Determine mass limit for stations.
 
+/data/npcFactions
+-----------------
+This folder is where one defines what factions appear in generated universes, how they behave,
+and most importantly what ships and stations are spawned.
+
+npcSpawnConfig.xml - Determines what factions spawn, where they spawn, and how big they are initially.
+
+Subfolders - must match the 'presets' name in npcSpawnConfig.xml.  (e.g. if Faction 'A' has a <Presets> tag with 'A', a subfolder
+with path /data/npcFactions/A should exist)
+Each subfolder must have: 
+ - A npcConfig.xml in it; this determines how factions interact with each other and react to players
+   doing stuff (attacking, declaring war, declaring peace, trading, etc.)
+ - A blueprints.zip file.  This file should contain all blueprints that the faction can possibly spawn.
+
 /data/config/BlockBehaviorConfig.xml:
 -------------------------------------
 Changes how weapons behave.  As this is XML, all identifiers are XPaths.
