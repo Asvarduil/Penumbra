@@ -1,0 +1,653 @@
+<NPCFactionConfig>
+    <Version>0<!--autocreated--></Version>
+    <Config>
+        <Outer>
+            <!--Classification Weight: A weighted distribution of blueprint classes. This will normalize on existing classes. Example if we have available FIGHTER(weight 3), MINING(weight 1), TRADING(weight 5), then with 9 spawned ships, there would be 3 fighters, 1 miner, and 5 traders. Same happens with mass distribution of every class from index 0 (lightest ship) to 15 (heaviest ship), so if you set 0,0,0,0,0,0,0,0,0,0,0,0,0,0,1, only the biggest mass ships will be spawned (but nothing else). if you set 1,0,0,0,0,0,0,0,0,0,0,0,0,0,1, the smalled and biggest mass ships will spawn equally (but nothing inbetween)-->
+            <ClassificationWeight>
+                <Classification>NONE</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>MINING</Classification>
+                <Weight>0.2</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SUPPORT</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>CARGO</Classification>
+                <Weight>0.25</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>ATTACK</Classification>
+                <Weight>0.25</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>DEFENSE</Classification>
+                <Weight>1.0</Weight>
+                <MassDistribution>10.0, 8.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>CARRIER</Classification>
+                <Weight>0.1</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SCOUT</Classification>
+                <Weight>0.1</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SCAVENGER</Classification>
+                <Weight>0.25</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_STATION</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SHIPYARD_STATION</Classification>
+                <Weight>0.2</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>OUTPOST_STATION</Classification>
+                <Weight>0.2</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>DEFENSE_STATION</Classification>
+                <Weight>0.2</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>MINING_STATION</Classification>
+                <Weight>0.5</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>FACTORY_STATION</Classification>
+                <Weight>0.5</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>TRADE_STATION</Classification>
+                <Weight>0.25</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>WAYPOINT_STATION</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SHOPPING_STATION</Classification>
+                <Weight>0.25</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_ASTEROID</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_ASTEROID_MANAGED</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_PLANET</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_SHOP</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_ICO</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+        </Outer>
+        <Inner>
+            <!--Classification Weight: A weighted distribution of blueprint classes. This will normalize on existing classes. Example if we have available FIGHTER(weight 3), MINING(weight 1), TRADING(weight 5), then with 9 spawned ships, there would be 3 fighters, 1 miner, and 5 traders. Same happens with mass distribution of every class from index 0 (lightest ship) to 15 (heaviest ship), so if you set 0,0,0,0,0,0,0,0,0,0,0,0,0,0,1, only the biggest mass ships will be spawned (but nothing else). if you set 1,0,0,0,0,0,0,0,0,0,0,0,0,0,1, the smalled and biggest mass ships will spawn equally (but nothing inbetween)-->
+            <ClassificationWeight>
+                <Classification>NONE</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>MINING</Classification>
+                <Weight>0.5</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SUPPORT</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>CARGO</Classification>
+                <Weight>2.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>ATTACK</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>DEFENSE</Classification>
+                <Weight>2.0</Weight>
+                <MassDistribution>50.0, 40.0, 30.0, 20.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>CARRIER</Classification>
+                <Weight>0.5</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SCOUT</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SCAVENGER</Classification>
+                <Weight>0.25</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_STATION</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SHIPYARD_STATION</Classification>
+                <Weight>0.2</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>OUTPOST_STATION</Classification>
+                <Weight>0.2</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>DEFENSE_STATION</Classification>
+                <Weight>0.2</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>MINING_STATION</Classification>
+                <Weight>0.5</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>FACTORY_STATION</Classification>
+                <Weight>0.5</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>TRADE_STATION</Classification>
+                <Weight>1.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>WAYPOINT_STATION</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>SHOPPING_STATION</Classification>
+                <Weight>1.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_ASTEROID</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_ASTEROID_MANAGED</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_PLANET</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_SHOP</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+            <ClassificationWeight>
+                <Classification>NONE_ICO</Classification>
+                <Weight>0.0</Weight>
+                <MassDistribution>1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0</MassDistribution>
+            </ClassificationWeight>
+        </Inner>
+        <BaseCredits>500000000</BaseCredits>
+        <RandomCredits>500000000</RandomCredits>
+        <HomeSystemEntitiesStart>10<!--count of entities in home system. the amount of other systems adapts depending on distance and fill--></HomeSystemEntitiesStart>
+        <ShipCountModifier>5.0<!--Must be at least 1. Changes the HomeSystemEntitiesStart for ships--></ShipCountModifier>
+        <StationCountModifier>1.0<!--Must be at least 1. Changes the HomeSystemEntitiesStart for stations--></StationCountModifier>
+        <FactionName>Trading Guild</FactionName>
+        <DefaultBaseTypeCountRaw>5<!--for initial inventory filling (raw stuff)--></DefaultBaseTypeCountRaw>
+        <DefaultRandomTypeCountRaw>5<!--for initial inventory filling (raw stuff)--></DefaultRandomTypeCountRaw>
+        <DefaultBaseTypeCountLevel1>5<!--for initial inventory filling (basic factory stuff)--></DefaultBaseTypeCountLevel1>
+        <DefaultRandomTypeCountLevel1>5<!--for initial inventory filling (basic factory stuff)--></DefaultRandomTypeCountLevel1>
+        <DefaultBaseTypeCountLevel2>5<!--for initial inventory filling (std factory stuff)--></DefaultBaseTypeCountLevel2>
+        <DefaultRandomTypeCountLevel2>5<!--for initial inventory filling (std factory stuff)--></DefaultRandomTypeCountLevel2>
+        <DefaultBaseTypeCountLevel3>5<!--for initial inventory filling (adv factory stuff)--></DefaultBaseTypeCountLevel3>
+        <DefaultRandomTypeCountLevel3>5<!--for initial inventory filling (adv factory stuff)--></DefaultRandomTypeCountLevel3>
+        <MinimumNormalizationModifier>0.01<!--When creating basic demand from blueprints. This is used to set a minimum weight, so that smaller ships become similary important than bigger things (since an npc faction is going to use higher numbers of smaller ships mostly)--></MinimumNormalizationModifier>
+        <LevelsFilled>1<!--levels (distance from homebase) filled until entity count falloff. The higher, the further away systems will have the same amount of entities as the home system. Use to make more defensive slow expending factions, since they need take longer to assemble resources toexpand as they are building much more stuff in the already taken territory.--></LevelsFilled>
+        <ProductionRawConversion>0.1<!--How many materials (in 0..1%) to use in production turn--></ProductionRawConversion>
+        <DemandAdditionalPerSystemMultiplier>0.05<!--Adds percentage of demand per system to total demand--></DemandAdditionalPerSystemMultiplier>
+        <MinDemandPerSystem>1000<!--Minimum demand for every resource per system--></MinDemandPerSystem>
+        <TradeDemandMult>4.0<!--Demand multiplier for trading--></TradeDemandMult>
+        <ExpensionDemandMult>0.2<!--Demand multiplier for faction to grow--></ExpensionDemandMult>
+        <ExpensionDemandConsumeMult>1.0<!--Demand consumed on actual expansion--></ExpensionDemandConsumeMult>
+        <TradeBuyLowerPercentage>0.0<!--minimum Inventory/Demand percentage on which to start buying--></TradeBuyLowerPercentage>
+        <TradeBuyUpperPercentage>0.6<!--maximum Inventory/Demand percentage on which to stop buying--></TradeBuyUpperPercentage>
+        <TradeBuyLowerPricePercentage>0.95<!--Price to buy at on TradeBuyUpperPercentage--></TradeBuyLowerPricePercentage>
+        <TradeBuyUpperPricePercentage>1.1<!--Price to buy at on TradeBuyLowerPercentage--></TradeBuyUpperPricePercentage>
+        <TradeSellLowerPercentage>0.4<!--maximum Inventory/Demand percentage on which to stop selling--></TradeSellLowerPercentage>
+        <TradeSellUpperPercentage>1.0<!--minimum Inventory/Demand percentage on which to start selling--></TradeSellUpperPercentage>
+        <TradeSellLowerPricePercentage>0.9<!--Price to buy at on TradeSellUpperPercentage--></TradeSellLowerPricePercentage>
+        <TradeSellUpperPricePercentage>1.05<!--Price to sell at on TradeSellLowerPercentage--></TradeSellUpperPricePercentage>
+        <TradePricePerSystem>0.001<!--Trade Value: additional price per system (transport cost)--></TradePricePerSystem>
+        <MaxOwnCreditsToUseForTrade>0.90<!--Credits to use to buy stuff--></MaxOwnCreditsToUseForTrade>
+        <MaxOtherCreditsToUseForTrade>0.90<!--Credits of trading partner to use for selling--></MaxOtherCreditsToUseForTrade>
+        <AbandonSystemOnStatus>0.75<!--Abanond system when status (lost resources) are percentage of contingent--></AbandonSystemOnStatus>
+        <AbandonSystemOnStatusAfterResupply>0.8<!--Abanond system when status (lost resources) are percentage of contingent. This is checked after resupply--></AbandonSystemOnStatusAfterResupply>
+        <MinimumResourceMining>0.05<!--Minimum mining factor (for raw resources)--></MinimumResourceMining>
+        <ResourcesPerMinerScore>3.0<!--Multiplies score of all available Miners in a System with their mining score. Then that is multiplied with the mining factor (between 0 and 1 depending on resource richness of the system)--></ResourcesPerMinerScore>
+        <MinedResourcesAddedFromMisc>0.1<!--Percentage of mined misc materials (flowers, stone, etc) to be added to mined resources (indication for mined-out system)--></MinedResourcesAddedFromMisc>
+        <ResourceAvaililityMultiplicator>60000.0<!--How much resources is richness worth. Basically the simulated amount of resources in a system in combination with richness--></ResourceAvaililityMultiplicator>
+        <BasicMiningScorePerSystem>0.0<!--Basic mining score per system--></BasicMiningScorePerSystem>
+        <MiningStationMiningScore>500.0<!--A mining station's mining score--></MiningStationMiningScore>
+        <ResourcesConsumeStep>0.1<!--Step size to consume per turn (added per turn until sum is 1)--></ResourcesConsumeStep>
+        <ResourcesConsumedPerDistance>0.2<!--Step size to consume per turn (added per turn until sum is 1)--></ResourcesConsumedPerDistance>
+        <ReplenishResourceRate>0.025<!--Percentage of Minable Resources in system replenished per turn--></ReplenishResourceRate>
+        <MinimumMinableResources>0.5<!--Minimum Resource percentage in system on which faction will do mining--></MinimumMinableResources>
+        <InitialGrowBaseDefault>20<!--(only used if setting in spawn config is -1) Fixed minimum initial grown systems (additional to home system)--></InitialGrowBaseDefault>
+        <InitialGrowAddedDefaultRandom>15<!--(only used if setting in spawn config is -1) Randomly added initial grown systems (additional to home system and minimum fixed amount)--></InitialGrowAddedDefaultRandom>
+        <TimeBetweenTurnsMS>900000<!--Time between faction turns in milliseconds--></TimeBetweenTurnsMS>
+        <Diplomacy>
+            <!--Diplomacy configuration. There are actions and states. States will add a constant effect on points as long as its active. Actions add/remove over time as long as the action is active. Actions get reset if repeated. Reactions can exist both for actions (checked and executed when that action happens) or general, which are executed on action/status turn.-->
+            <!--Status Types: IN_WAR, IN_WAR_WITH_ENEMY, CLOSE_TERRITORY, POWER, PIRATE, ALLIANCE, ALLIANCE_WITH_ENEMY, NON_AGGRESSION, ALLIANCE_WITH_FRIENDS, IN_WAR_WITH_FRIENDS, FACTION_MEMBER_AT_WAR_WITH_US, FACTION_MEMBER_WE_DONT_LIKE-->
+            <!--Action Types: ATTACK, ATTACK_ENEMY, MINING, TERRITORY, PEACE_OFFER, DECLARATION_OF_WAR, ALLIANCE_REQUEST, ALLIANCE_CANCEL, TRADING_WITH_US, TRADING_WITH_ENEMY, ALLIANCE_WITH_ENEMY-->
+            <!--Reaction Types: DECLARE_WAR, OFFER_PEACE_DEAL, REMOVE_PEACE_DEAL_OFFER, OFFER_ALLIANCE, REMOVE_ALLIANCE_OFFER, ACCEPT_ALLIANCE_OFFER, ACCEPT_PEACE_OFFER, REJECT_ALLIANCE_OFFER, REJECT_PEACE_OFFER, SEND_POPUP_MESSAGE-->
+            <!--Condition Types: EXISTS_ACTION, EXISTS_STATUS, STATUS_POINTS, STATUS_PERSISTED, ACTION_PERSISTED, ACTION_COUNTER, TOTAL_POINTS, RAW_POINTS-->
+            <Version>2<!--To ensure compatibility on updates, the Diplomacy config will reset to a new default, should the version differ with what the game considers to be the latest diplomacy config format version--></Version>
+            <ActionTimeouts>
+                <!--How long actions are valid in milliseconds.-->
+                <Attack>60000</Attack>
+                <Attack_enemy>60000</Attack_enemy>
+                <Mining>60000</Mining>
+                <Territory>60000</Territory>
+                <Peace_offer>60000</Peace_offer>
+                <Declaration_of_war>60000</Declaration_of_war>
+                <Alliance_request>60000</Alliance_request>
+                <Alliance_cancel>60000</Alliance_cancel>
+                <Trading_with_us>60000</Trading_with_us>
+                <Trading_with_enemy>60000</Trading_with_enemy>
+                <Alliance_with_enemy>60000</Alliance_with_enemy>
+            </ActionTimeouts>
+            <DiplomacyElement>
+                <DiplAction>
+                    <Name>ATTACK</Name>
+                    <UpperLimit>-500<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>0</LowerLimit>
+                    <ExistingModifier>10<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>10<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>1.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>-50<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplAction>
+                    <Name>ATTACK_ENEMY</Name>
+                    <UpperLimit>500<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>0</LowerLimit>
+                    <ExistingModifier>5<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>5<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>1.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>100<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplAction>
+                    <Name>MINING</Name>
+                    <UpperLimit>-30<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>0</LowerLimit>
+                    <ExistingModifier>2<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>1<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>1.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>-10<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplAction>
+                    <Name>TERRITORY</Name>
+                    <UpperLimit>-50<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>0</LowerLimit>
+                    <ExistingModifier>1<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>1<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>10.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>-50<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplAction>
+                    <Name>DECLARATION_OF_WAR</Name>
+                    <UpperLimit>-1000<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>0</LowerLimit>
+                    <ExistingModifier>1000<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>1000<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>1.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>-1000<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplAction>
+                    <Name>ALLIANCE_CANCEL</Name>
+                    <UpperLimit>-50<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>0</LowerLimit>
+                    <ExistingModifier>5<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>5<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>1.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>-50<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplAction>
+                    <Name>TRADING_WITH_US</Name>
+                    <UpperLimit>100<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>10</LowerLimit>
+                    <ExistingModifier>2<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>1<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>1.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>10<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplAction>
+                    <Name>TRADING_WITH_ENEMY</Name>
+                    <UpperLimit>-200<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>0</LowerLimit>
+                    <ExistingModifier>5<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>5<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>1.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>-5<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplAction>
+                    <Name>ALLIANCE_WITH_ENEMY</Name>
+                    <UpperLimit>-25<!--If lower than lower limit, it's a minus effect on diplomacy--></UpperLimit>
+                    <LowerLimit>0</LowerLimit>
+                    <ExistingModifier>1<!--How much the modifier changes towards upper limit each diplomacy round--></ExistingModifier>
+                    <NonExistingModifier>1<!--How much the modifier changes towards lower limit each diplomacy round--></NonExistingModifier>
+                    <ActionTimeoutDuration>1.0<!--Time for Action to timeout (in faction turns)--></ActionTimeoutDuration>
+                    <Value>-25<!--In diplomacy points (no float)--></Value>
+                </DiplAction>
+                <DiplStatus>
+                    <Name>IN_WAR</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>-10000<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>IN_WAR_WITH_ENEMY</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>1000<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>CLOSE_TERRITORY</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>-500<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>POWER</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>1<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>ALLIANCE</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>1500<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>ALLIANCE_WITH_ENEMY</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>-750<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>NON_AGGRESSION</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>100<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>ALLIANCE_WITH_FRIENDS</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>250<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>IN_WAR_WITH_FRIENDS</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>-250<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>FACTION_MEMBER_AT_WAR_WITH_US</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>-500<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+                <DiplStatus>
+                    <Name>FACTION_MEMBER_WE_DONT_LIKE</Name>
+                    <Timeout>1.0<!--In Faction Turns--></Timeout>
+                    <Value>-50<!--In diplomacy points (no float)--></Value>
+                </DiplStatus>
+            </DiplomacyElement>
+            <Reactions>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                        <Name/>
+                        <Message/>
+                        <Action>ACCEPT_PEACE_OFFER<!----></Action>
+                        <AND>
+                            <Condition>
+                                <Type>RAW_POINTS</Type>
+                                <!--Raw diplomacy points (without sttaus effects) equal or bigger than X-->
+                                <Value>-16000.0</Value>
+                            </Condition>
+                        </AND>
+                    </Reaction>
+                <Reaction>
+                    <Name>Declare War on bad score</Name>
+                    <Message/>
+                    <Action>DECLARE_WAR<!----></Action>
+                    <NOT>
+                        <Condition>
+                            <Type>TOTAL_POINTS</Type>
+                            <!--Total diplomacy points equal or bigger than X-->
+                            <Value>-16000.0</Value>
+                        </Condition>
+                    </NOT>
+                </Reaction>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                    <Name>Offer Peace Deal</Name>
+                    <Message/>
+                    <Action>OFFER_PEACE_DEAL<!----></Action>
+                    <AND>
+                        <Condition>
+                            <Type>TOTAL_POINTS</Type>
+                            <!--Total diplomacy points equal or bigger than X-->
+                            <Value>-16000.0</Value>
+                        </Condition>
+                        <Condition>
+                            <Type>STATUS_PERSISTED</Type>
+                            <!--Min time the status has been applied for equal or bigger than X-->
+                            <Status>NON_AGGRESSION</Status>
+                            <Value>120000.0</Value>
+                        </Condition>
+                    </AND>
+                </Reaction>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                    <Name>Offer Peace Deal on non agression only</Name>
+                    <Message/>
+                    <Action>OFFER_PEACE_DEAL<!----></Action>
+                    <AND>
+                        <Condition>
+                            <Type>STATUS_PERSISTED</Type>
+                            <!--Min time the status has been applied for equal or bigger than X-->
+                            <Status>NON_AGGRESSION</Status>
+                            <Value>7200000.0</Value>
+                        </Condition>
+                    </AND>
+                </Reaction>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                    <Name>Offer Alliance</Name>
+                    <Message/>
+                    <Action>OFFER_ALLIANCE<!----></Action>
+                    <AND>
+                        <Condition>
+                            <Type>TOTAL_POINTS</Type>
+                            <!--Total diplomacy points equal or bigger than X-->
+                            <Value>2500.0</Value>
+                        </Condition>
+                        <Condition>
+                            <Type>STATUS_PERSISTED</Type>
+                            <!--Min time the status has been applied for equal or bigger than X-->
+                            <Status>NON_AGGRESSION</Status>
+                            <Value>7200000.0</Value>
+                        </Condition>
+                    </AND>
+                </Reaction>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                    <Name>Remove Alliance Offer</Name>
+                    <Message/>
+                    <Action>REMOVE_ALLIANCE_OFFER<!----></Action>
+                    <AND>
+                        <Condition>
+                            <Type>ACTION_COUNTER</Type>
+                            <!--Amount of actions triggered (within timeout) equal or bigger than-->
+                            <Action>ATTACK</Action>
+                            <Value>1.0</Value>
+                        </Condition>
+                    </AND>
+                </Reaction>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                    <Name>Remove Peace Deal Offer</Name>
+                    <Message/>
+                    <Action>REMOVE_PEACE_DEAL_OFFER<!----></Action>
+                    <AND>
+                        <Condition>
+                            <Type>ACTION_COUNTER</Type>
+                            <!--Amount of actions triggered (within timeout) equal or bigger than-->
+                            <Action>ATTACK</Action>
+                            <Value>1.0</Value>
+                        </Condition>
+                    </AND>
+                </Reaction>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                    <Name>Reject Alliance Offer</Name>
+                    <Message/>
+                    <Action>REJECT_ALLIANCE_OFFER<!----></Action>
+                    <NOT>
+                        <Condition>
+                            <Type>TOTAL_POINTS</Type>
+                            <!--Total diplomacy points equal or bigger than X-->
+                            <Value>1500.0</Value>
+                        </Condition>
+                    </NOT>
+                </Reaction>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                    <Name>Send message on one Attack</Name>
+                    <Message>Attacks will not be tolerated!</Message>
+                    <Action>SEND_POPUP_MESSAGE<!----></Action>
+                    <AND>
+                        <Condition>
+                            <Type>ACTION_COUNTER</Type>
+                            <!--Amount of actions triggered (within timeout) equal or bigger than-->
+                            <Action>ATTACK</Action>
+                            <Value>1.0</Value>
+                        </Condition>
+                    </AND>
+                </Reaction>
+                <!--Diplomacy Reaction-->
+                <Reaction>
+                    <Name>Declare War on three hostile actions</Name>
+                    <Message/>
+                    <Action>DECLARE_WAR<!----></Action>
+                    <AND>
+                        <Condition>
+                            <Type>ACTION_COUNTER</Type>
+                            <!--Amount of actions triggered (within timeout) equal or bigger than-->
+                            <Action>ATTACK</Action>
+                            <Value>3.0</Value>
+                        </Condition>
+                    </AND>
+                </Reaction>
+            </Reactions>
+        </Diplomacy>
+        <DiplomacyStatusCheckDelay>60000<!--Check for status effects (war, etc)--></DiplomacyStatusCheckDelay>
+        <DiplomacyTurnEffectDelay>60000<!--Time for turn effects to apply to points--></DiplomacyTurnEffectDelay>
+        <DiplomacyTurnEffectChangeDelay>60000<!--Time for turn effects to change (falloff or get stronger depending on direction)--></DiplomacyTurnEffectChangeDelay>
+        <FleetClasses>
+            <FleetClass>
+                <!--Blueprint classes going to be added to a fleet of this class in looping order-->
+                <Type>ATTACKING</Type>
+                <Classes>ATTACK, DEFENSE</Classes>
+            </FleetClass>
+            <FleetClass>
+                <!--Blueprint classes going to be added to a fleet of this class in looping order-->
+                <Type>DEFENDING</Type>
+                <Classes>DEFENSE, ATTACK</Classes>
+            </FleetClass>
+            <FleetClass>
+                <!--Blueprint classes going to be added to a fleet of this class in looping order-->
+                <Type>SCAVENGE</Type>
+                <Classes>SCAVENGER</Classes>
+            </FleetClass>
+            <FleetClass>
+                <!--Blueprint classes going to be added to a fleet of this class in looping order-->
+                <Type>MINING</Type>
+                <Classes>MINING, DEFENSE</Classes>
+            </FleetClass>
+            <FleetClass>
+                <!--Blueprint classes going to be added to a fleet of this class in looping order-->
+                <Type>TRADING</Type>
+                <Classes>CARGO, DEFENSE</Classes>
+            </FleetClass>
+        </FleetClasses>
+        <DiplomacyStartPoints>1000</DiplomacyStartPoints>
+        <DiplomacyMaxPoints>5000</DiplomacyMaxPoints>
+        <DiplomacyMinPoints>-5000</DiplomacyMinPoints>
+        <MinimumTradeValue>10000</MinimumTradeValue>
+        <AmountOfBlocksToTradeMax>1000000</AmountOfBlocksToTradeMax>
+        <ProductionMultiplier>5000</ProductionMultiplier>
+        <ProductionStepts>10</ProductionStepts>
+        <DoesAbandonSystems>true<!--Should faction ever lose any system--></DoesAbandonSystems>
+        <DoesAbandonHome>false<!--Should faction ever lose its home system (DoesAbandonSystems must be true for this to be considered)--></DoesAbandonHome>
+        <MinDefendFleetCount>1<!--Minimum fleets per system--></MinDefendFleetCount>
+        <MaxDefendFleetCount>5<!--Maximum fleets per system--></MaxDefendFleetCount>
+        <DefendFleetsPerStation>1.0<!--Fleets per station--></DefendFleetsPerStation>
+        <MaxMiningFleetCount>5<!--Maximum fleets per system--></MaxMiningFleetCount>
+        <MiningShipsPerFleet>3.0<!--Amount of mining contingent to put in a mining fleet (no mining fleets without any contingent)--></MiningShipsPerFleet>
+        <CanAttackStations>true</CanAttackStations>
+        <CanAttackShips>true</CanAttackShips>
+        <DamageTaken>0.5</DamageTaken>
+        <DamageGiven>1.0</DamageGiven>
+        <MinScavenginRange>1.0<!--Range in systems--></MinScavenginRange>
+        <ScavengingRangePerFactionLevel>2.0<!--(level is max distance of territory in one dimension)--></ScavengingRangePerFactionLevel>
+        <ScvengingFleetsPerTurn>2<!--Amount of sectors to target with scavengin fleets (sectors where an attack happened in range)--></ScvengingFleetsPerTurn>
+        <DefendFleetsToSendToAttacker>0.25<!--Percent of defend fleets of total defend fleets available to send to sector in which attack happens. This is only called once every 5 minutes per sector. Already close fleets are not considered--></DefendFleetsToSendToAttacker>
+        <MinDefendFleetsToSendToAttacker>2<!--Minimum fleets to send to an attack in the system--></MinDefendFleetsToSendToAttacker>
+        <TradingMinDefenseShips>2<!--minimum defense/attack ships (if existing in the fleet type) to send on a trading mission--></TradingMinDefenseShips>
+        <TradingCargoMassVersusDefenseMass>2.0<!--defense/attack ships to send compared to mass of cargo (more cargo, more ships) to send on a trding mission--></TradingCargoMassVersusDefenseMass>
+        <TradingMaxDefenseShipsPerCargo>5<!--maximum defense/attack ships per cargo ship to send on a trding mission--></TradingMaxDefenseShipsPerCargo>
+    </Config>
+</NPCFactionConfig>

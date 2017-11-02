@@ -1,0 +1,25 @@
+<NPCConfig>
+    <Version>0<!--autocreated--></Version>
+    <Config>
+        <Faction>
+			<RandomSpawn>false</RandomSpawn>
+			<FixedSpawnSystem>-5,2,3</FixedSpawnSystem>
+			<Name>Coalition of Systems</Name>
+			<Description>
+			Drawing strength from many worlds, the Coalition are explorers and scientists.  Their technology is powerful, and are amenable to diplomacy.
+			</Description>
+			<PossiblePresets>Coalition</PossiblePresets>
+			<InitialGrowth>6</InitialGrowth>
+		</Faction>
+		<Faction>
+			<RandomSpawn>false</RandomSpawn>
+			<FixedSpawnSystem>5,-1,-4</FixedSpawnSystem>
+			<Name>Valron Empire</Name>
+			<Description>
+			The proud warriors of the Valron Empire believe in might.  The Valron respect fighters, and accord a victorious warrior with praise.
+			</Description>
+			<PossiblePresets>Valron</PossiblePresets>
+			<InitialGrowth>6</InitialGrowth>
+		</Faction>
+    </Config>
+</NPCConfig>

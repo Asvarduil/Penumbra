@@ -1,0 +1,36 @@
+<NPCConfig>
+    <Version>0<!--autocreated--></Version>
+    <Config>
+        <Faction>
+            <RandomSpawn>false<!--Faction will spawn in a random star system--></RandomSpawn>
+            <FixedSpawnSystem>0, 0, 0<!--If random spawn is off, set the location. Will switch to random if system is already taken--></FixedSpawnSystem>
+            <Name>Traders<!--Name of the faction--></Name>
+            <Description>The Trading Guild is a collection of large corporations. They work to better themselves primarily through trade and economics.
+The Trading Guild treats others with neutrality, and they hardly care who or what they sell their products to. Their wealth grants them strength, but they are a relatively peaceful faction.<!--Description of the faction--></Description>
+            <PossiblePresets>Trading Guild<!--Possible Faction Config presets. Seperate with comma--></PossiblePresets>
+            <InitialGrowth>-1<!--How many systems are initially taken--></InitialGrowth>
+        </Faction>
+        <Faction>
+            <RandomSpawn>true<!--Faction will spawn in a random star system--></RandomSpawn>
+            <FixedSpawnSystem>
+                <!--If random spawn is off, set the location. Will switch to random if system is already taken-->
+            </FixedSpawnSystem>
+            <Name>Outcasts<!--Name of the faction--></Name>
+            <Description>The Outcasts is a loose organization comprised of many different alien species. The harshness of space has left these people without a home, and so they rely on each to survive. The Outcasts are not particularly strong, 
+but treat outsiders with justifiable wariness. The Outcasts are spread thin across the stars and seek to avoid the attention of others.<!--Description of the faction--></Description>
+            <PossiblePresets>Outcasts<!--Possible Faction Config presets. Seperate with comma--></PossiblePresets>
+            <InitialGrowth>-1<!--How many systems are initially taken--></InitialGrowth>
+        </Faction>
+        <Faction>
+            <RandomSpawn>true<!--Faction will spawn in a random star system--></RandomSpawn>
+            <FixedSpawnSystem>
+                <!--If random spawn is off, set the location. Will switch to random if system is already taken-->
+            </FixedSpawnSystem>
+            <Name>Scavengers<!--Name of the faction--></Name>
+            <Description>The Scavengers are a violent people. They care only for themselves, and are willing to do whatever it takes to achieve their goals. Space is a bleak place, and it has driven them to the extremes.
+Their unwillingness to work with others leaves them at a disadvantage. As a result, the Scavengers are fairly weak. They are little more than a nuisance to many other factions.<!--Description of the faction--></Description>
+            <PossiblePresets>Scavengers<!--Possible Faction Config presets. Seperate with comma--></PossiblePresets>
+            <InitialGrowth>-1<!--How many systems are initially taken--></InitialGrowth>
+        </Faction>
+    </Config>
+</NPCConfig>
