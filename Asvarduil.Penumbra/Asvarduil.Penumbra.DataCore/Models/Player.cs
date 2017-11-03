@@ -14,5 +14,6 @@ namespace Asvarduil.Penumbra.DataCore.Models
 
         public NetWorth NetWorth { get; set; }
         public List<Bounty> Bounties { get; set; }
+        public List<PlayerQuest> Quests { get; set; }
     }
 }

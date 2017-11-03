@@ -123,6 +123,24 @@ namespace Asvarduil.Penumbra.Tests.StarMadeCommands
             TestCommandOutput(serverOutput, expectedResult);
         }
 
+        [TestMethod]
+        [TestCategory("Admin Commands")]
+        public void AdminCanDespawnShips()
+        {
+            PlayerService.Create("SuperUser");
+
+            PlayerService.PromoteToAdmin("SuperUser");
+
+            string serverOutput = "[CHANNELROUTER] RECEIVED MESSAGE ON Server(0): [CHAT][sender=SuperUser][receiverType=CHANNEL][receiver=Server][message=!REMOVESHIP Starship Taco]";
+            var expectedResult = new List<string>
+            {
+                "/despawn_all \"Starship Taco\" all true",
+                "/server_message_to info SuperUser \"Removed all ships that start with Starship Taco.\""
+            };
+
+            TestCommandOutput(serverOutput, expectedResult);
+        }
+
         /// <summary>
         /// Given a server output, ensure that when the appropriate command is run, that the expected result is generated.
         /// </summary>

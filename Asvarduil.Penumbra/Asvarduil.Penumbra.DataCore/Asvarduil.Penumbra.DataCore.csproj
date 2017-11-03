@@ -59,6 +59,10 @@
     <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\NetWorth.cs" />
     <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\PlayerQuest.cs" />
+    <Compile Include="Models\Quest.cs" />
+    <Compile Include="Models\QuestItemReward.cs" />
+    <Compile Include="Models\QuestObjective.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BountyRepository.cs" />
     <Compile Include="Repositories\FeedbackRepository.cs" />
@@ -69,6 +73,7 @@
     <Compile Include="Repositories\SqlRepositoryBase.cs" />
     <Compile Include="Services\FeedbackService.cs" />
     <Compile Include="Services\PlayerService.cs" />
+    <Compile Include="Services\QuestService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Queries\AddNewBounty.sql">

@@ -46,6 +46,7 @@
     <Compile Include="ChatCommands\AdminCommands\GrantNetWorthChatCommand.cs" />
     <Compile Include="ChatCommands\AdminCommands\ReadFeedbackChatCommand.cs" />
     <Compile Include="ChatCommands\AdminCommands\RemoveBountyChatCommand.cs" />
+    <Compile Include="ChatCommands\AdminCommands\RemoveShipCommand.cs" />
     <Compile Include="ChatCommands\AdminCommands\RestartChatCommand.cs" />
     <Compile Include="ChatCommands\AdminCommands\ShutdownChatCommand.cs" />
     <Compile Include="ChatCommands\StandardCommands\BountyChatCommand.cs" />

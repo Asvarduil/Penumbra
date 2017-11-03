@@ -24,7 +24,8 @@ namespace Asvarduil.Penumbra.StarMadeCore.ChatCommands
             new AdminPromoteChatCommand(),
             new AdminDemoteChatCommand(),
             new RemoveBountyChatCommand(),
-            new GrantNetWorthChatCommand()
+            new GrantNetWorthChatCommand(),
+            new RemoveShipCommand()
         };
 
         #endregion Variables / Properties

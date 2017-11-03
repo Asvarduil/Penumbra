@@ -60,16 +60,16 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Configurations\Default\data\npcFactions\Outcasts\blueprints.zip" />
+    <None Include="Configurations\Default\data\npcFactions\Scavengers\blueprints.zip" />
+    <None Include="Configurations\Default\data\npcFactions\Trading Guild\blueprints.zip" />
+    <None Include="Configurations\Modded\data\npcFactions\Coalition\blueprints.zip" />
+    <None Include="Configurations\Modded\data\npcFactions\Valron\blueprints.zip" />
     <None Include="Configurations\Modded\server.cfg" />
     <None Include="Configurations\Default\server.cfg" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Configurations\Default\blueprints-default\" />
-    <Folder Include="Configurations\Default\blueprints-stations\" />
-    <Folder Include="Configurations\Modded\blueprints-default\" />
-    <Folder Include="Configurations\Modded\blueprints-stations\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Asvarduil.Penumbra.DataCore\Asvarduil.Penumbra.DataCore.csproj">
       <Project>{9789a752-9426-4288-bad3-bb4d771a899f}</Project>
@@ -87,22 +87,23 @@
   <ItemGroup>
     <Content Include="Configurations\Config Modding Notes.txt" />
     <Content Include="Configurations\Default\admins.txt" />
-    <Content Include="Configurations\Default\customBlockBehaviorConfig\customBlockBehaviorConfigHOWTO.txt" />
-    <Content Include="Configurations\Default\customBlockBehaviorConfig\customBlockBehaviorConfigTemplate.xml" />
-    <Content Include="Configurations\Default\customBlockConfig\BlockConfigImportHowto.txt" />
-    <Content Include="Configurations\Default\customBlockConfig\BlockConfigImportTemplate.xml" />
-    <Content Include="Configurations\Default\customFactionConfig\customFactionConfigHOWTO.txt" />
-    <Content Include="Configurations\Default\customFactionConfig\FactionConfigTemplate.xml" />
+    <Content Include="Configurations\Default\data\blockBehaviorConfig.xml" />
+    <Content Include="Configurations\Default\data\BlockConfig.xml" />
+    <Content Include="Configurations\Default\data\FactionConfig.xml" />
+    <Content Include="Configurations\Default\data\npcFactions\npcSpawnConfig.xml" />
+    <Content Include="Configurations\Default\data\npcFactions\Outcasts\npcConfig.xml" />
+    <Content Include="Configurations\Default\data\npcFactions\Scavengers\npcConfig.xml" />
+    <Content Include="Configurations\Default\data\npcFactions\Trading Guild\npcConfig.xml" />
     <Content Include="Configurations\Default\GameConfig.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Configurations\Modded\admins.txt" />
-    <Content Include="Configurations\Modded\customBlockBehaviorConfig\customBlockBehaviorConfigHOWTO.txt" />
-    <Content Include="Configurations\Modded\customBlockBehaviorConfig\customBlockBehaviorConfigTemplate.xml" />
-    <Content Include="Configurations\Modded\customBlockConfig\BlockConfigImportHowto.txt" />
-    <Content Include="Configurations\Modded\customBlockConfig\BlockConfigImportTemplate.xml" />
-    <Content Include="Configurations\Modded\customFactionConfig\customFactionConfigHOWTO.txt" />
-    <Content Include="Configurations\Modded\customFactionConfig\FactionConfigTemplate.xml" />
+    <Content Include="Configurations\Modded\data\blockBehaviorConfig.xml" />
+    <Content Include="Configurations\Modded\data\BlockConfig.xml" />
+    <Content Include="Configurations\Modded\data\FactionConfig.xml" />
+    <Content Include="Configurations\Modded\data\npcFactions\Coalition\npcConfig.xml" />
+    <Content Include="Configurations\Modded\data\npcFactions\npcSpawnConfig.xml" />
+    <Content Include="Configurations\Modded\data\npcFactions\Valron\npcConfig.xml" />
     <Content Include="Configurations\Modded\GameConfig.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asvarduil.Penumbra.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asvarduil.Penumbra.StarMadeCore", "Asvarduil.Penumbra.StarMadeCore\Asvarduil.Penumbra.StarMadeCore.csproj", "{9F673A5A-B522-4E8E-942B-AA659CD864EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asvarduil.Penumbra.QuestEngine", "Asvarduil.Penumbra.QuestEngine\Asvarduil.Penumbra.QuestEngine.csproj", "{4E2B18A5-9629-4F51-A95F-25D5576AF92D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9F673A5A-B522-4E8E-942B-AA659CD864EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F673A5A-B522-4E8E-942B-AA659CD864EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F673A5A-B522-4E8E-942B-AA659CD864EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2B18A5-9629-4F51-A95F-25D5576AF92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2B18A5-9629-4F51-A95F-25D5576AF92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2B18A5-9629-4F51-A95F-25D5576AF92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2B18A5-9629-4F51-A95F-25D5576AF92D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
