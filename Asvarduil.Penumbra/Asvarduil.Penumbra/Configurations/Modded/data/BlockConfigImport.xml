@@ -1,0 +1,55 @@
+<Config>
+	<Element>
+		<General>
+			<Docking>
+				<Block icon="594" name="Rail Docker" textureId="454, 455, 453, 453, 453, 453" type="RAIL_BLOCK_DOCKER">
+					<!-- Recipe for Rail Docker: 25x Alloyed Metal Mesh, 25x Crystal Circuit -->
+					<Consistence>
+						<Item count="25">METAL_MESH</Item>
+						<Item count="25">POWER_COIL_ID</Item>  <!-- This is a Crystal Circuit.  Trust me. -->
+					</Consistence>
+					<Price>250</Price>                         <!-- Original price: 500 CR -->
+				</Block>
+				<Block icon="595" name="Rail Basic" textureId="475, 463, 463, 463, 463, 463" type="RAIL_BLOCK_BASIC">
+					<!-- Recipe for Basic Rail: 5x Alloyed Metal Mesh, 5x Crystal Circuit -->
+					<Consistence>
+						<Item count="5">METAL_MESH</Item>
+						<Item count="5">POWER_COIL_ID</Item>
+					</Consistence>
+					<Price>50</Price>                          <!-- Original price: 100 CR -->
+				</Block>
+				<Block icon="597" name="Rail Turret Axis" textureId="461, 462, 460, 460, 460, 460" type="RAIL_BLOCK_TURRET_Y_AXIS">
+					<!-- Recipe for a Rail Turret Axis: 10x Alloyed Metal Mesh, 10x Crystal Circuit -->
+					<Consistence>
+						<Item count="10">METAL_MESH</Item>
+						<Item count="10">POWER_COIL_ID</Item>
+					</Consistence>
+					<Price>200</Price>                         <!-- Original price: 100 CR -->
+				</Block>
+			</Docking>
+			<Decoration>
+				<Block icon="371" name="Medical Supplies" textureId="537, 537, 535, 535, 537, 537" type="MEDICAL_SUPPLIES">
+					<!-- Recipe for Medical Supplies: 25x Alloyed Metal Mesh, 10x Yhole, 10x Mushroom, 5x Small Berry Bush -->
+					<Consistence>
+						<Item count="25">METAL_MESH</Item>
+						<Item count="10">TERRAIN_YHOLE_SPRITE</Item>
+						<Item count="10">TERRAIN_REDSHROOM_SPRITE</Item>
+						<Item count="5">TERRAIN_TALLGRASSFLOWERS_SPRITE</Item>
+					</Consistence>
+					<Price>1000</Price>                        <!-- Original price: 750 CR -->
+				</Block>
+			</Decoration>
+		</General>
+		<SpaceStation>
+			<Block icon="40" name="Undeathinator" textureId="68, 68, 68, 68, 68, 68" type="PLAYER_SPAWN_MODULE">
+				<!-- Recipe for an Undeathinator: 50x Alloyed Metal Mesh, 50x Crystal Circuit, 1x Medical Supplies -->
+				<Consistence>
+					<Item count="50">METAL_MESH</Item>
+					<Item count="50">POWER_COIL_ID</Item>
+					<Item count="1">MEDICAL_SUPPLIES</Item>
+				</Consistence>
+				<Price>1000</Price>                           <!-- Original price: 1000 CR -->
+			</Block>
+		</SpaceStation>
+	</Element>
+</Config>
