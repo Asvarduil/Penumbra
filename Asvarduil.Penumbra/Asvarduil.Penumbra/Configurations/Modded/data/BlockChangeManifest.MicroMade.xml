@@ -48,7 +48,7 @@
 					<Item count="50">POWER_COIL_ID</Item>
 					<Item count="1">MEDICAL_SUPPLIES</Item>
 				</Consistence>
-				<Price>1000</Price>                           <!-- Original price: 1000 CR -->
+				<Price>1250</Price>                           <!-- Original price: 1000 CR -->
 			</Block>
 		</SpaceStation>
 	</Element>
