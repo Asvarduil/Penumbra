@@ -13,7 +13,10 @@ namespace Asvarduil.Penumbra.DataCore.Models
         public bool IsAdmin { get; set; }
 
         public NetWorth NetWorth { get; set; }
+        //public List<Reputation> Reputations { get; set; }
         public List<Bounty> Bounties { get; set; }
         public List<PlayerQuest> Quests { get; set; }
+        //public List<PlayerDebt> Debts { get; set; }
+        //public List<LoanedShip> LoanedShips { get; set; }       
     }
 }
