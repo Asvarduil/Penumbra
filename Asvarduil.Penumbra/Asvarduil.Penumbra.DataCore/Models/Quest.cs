@@ -16,6 +16,7 @@ namespace Asvarduil.Penumbra.DataCore.Models
         public string GUID;
         public QuestDifficulty Difficulty;
         public string Description;
+        
         public List<QuestObjective> Objectives;
         public int CreditReward;
         public int NetWorthReward;
