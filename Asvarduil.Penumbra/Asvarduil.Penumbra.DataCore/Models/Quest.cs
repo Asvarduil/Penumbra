@@ -20,5 +20,6 @@ namespace Asvarduil.Penumbra.DataCore.Models
         public int CreditReward;
         public int NetWorthReward;
         public List<QuestItemReward> ItemRewards;
+        public QuestReputationReward ReputationReward;
     }
 }
