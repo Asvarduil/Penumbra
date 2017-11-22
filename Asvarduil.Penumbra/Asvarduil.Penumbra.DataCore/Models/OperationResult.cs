@@ -1,6 +1,6 @@
 ﻿namespace Asvarduil.Penumbra.DataCore.Models
 {
-    public class BountyPostResult
+    public class OperationResult
     {
         public string Message;
 

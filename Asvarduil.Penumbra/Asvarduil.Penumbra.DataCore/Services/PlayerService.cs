@@ -116,9 +116,9 @@ namespace Asvarduil.Penumbra.DataCore.Services
         /// <param name="targetPlayerName">Player who will have the bounty posted against them.</param>
         /// <param name="bountyValue">Value of the bounty on the target</param>
         /// <returns>BountyPostResult, detailing success of the operation, or if it failed, why.</returns>
-        public static BountyPostResult PostBounty(string postingPlayerName, string targetPlayerName, int bountyValue)
+        public static OperationResult PostBounty(string postingPlayerName, string targetPlayerName, int bountyValue)
         {
-            var result = new BountyPostResult();
+            var result = new OperationResult();
 
             var postingPlayer = GetByName(postingPlayerName);
             if(postingPlayer == null)
@@ -161,9 +161,9 @@ namespace Asvarduil.Penumbra.DataCore.Services
         /// <param name="claimingPlayerName">Name of the player claiming the bounty.</param>
         /// <param name="targetPlayerName">Name of the player against whom bounties were claimed.</param>
         /// <returns>BountyPostResult, detailing success of the operation, or if it failed, why.</returns>
-        public static BountyPostResult ClaimBounty(string claimingPlayerName, string targetPlayerName)
+        public static OperationResult ClaimBounty(string claimingPlayerName, string targetPlayerName)
         {
-            var result = new BountyPostResult();
+            var result = new OperationResult();
 
             var claimingPlayer = GetByName(claimingPlayerName);
             if(claimingPlayer == null)
@@ -189,9 +189,9 @@ namespace Asvarduil.Penumbra.DataCore.Services
         /// </summary>
         /// <param name="targetPlayerName">Player from whom to remove bounties.</param>
         /// <returns>BountyPostResult, detailing success of the operation, or if it failed, why.</returns>
-        public static BountyPostResult RemoveBounty(string targetPlayerName)
+        public static OperationResult RemoveBounty(string targetPlayerName)
         {
-            var result = new BountyPostResult();
+            var result = new OperationResult();
 
             var targetPlayer = GetByName(targetPlayerName);
             if(targetPlayer == null)
@@ -269,15 +269,23 @@ namespace Asvarduil.Penumbra.DataCore.Services
         /// <param name="playerName">Name of the player to change reputation for</param>
         /// <param name="factionName">Faction with which reputation will be changed</param>
         /// <param name="amount">Amount by which reputation will change</param>
-        public static void ChangeFactionStanding(string playerName, string factionName, int amount)
+        public static OperationResult ChangeFactionStanding(string playerName, string factionName, int amount)
         {
-            var player = PlayerRepository.GetByName(playerName);
+            var result = new OperationResult();
+
+            var player = GetByName(playerName);
             if (player == null)
-                return;
+            {
+                result.Message = $"Player {playerName} has no entry in the Penumbra database.";
+                return result;
+            }
 
             var faction = FactionRepository.GetByName(factionName);
             if (faction == null)
-                return;
+            {
+                result.Message = $"Faction {factionName} has no entry in the Penumbra database.";
+                return result;
+            }
 
             var relevantReputation = player.Reputations.FirstOrDefault(r => r.Id == faction.Id);
             if (relevantReputation == null)
@@ -297,6 +305,8 @@ namespace Asvarduil.Penumbra.DataCore.Services
 
                 ReputationRepository.Update(relevantReputation);
             }
+
+            return result;
         }
     }
 }

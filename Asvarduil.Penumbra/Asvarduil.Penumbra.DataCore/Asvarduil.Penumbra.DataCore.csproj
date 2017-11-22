@@ -59,7 +59,7 @@
     <Compile Include="Mappers\PlayerMapping.cs" />
     <Compile Include="Mappers\ReputationMapper.cs" />
     <Compile Include="Models\Bounty.cs" />
-    <Compile Include="Models\BountyPostResult.cs" />
+    <Compile Include="Models\OperationResult.cs" />
     <Compile Include="Models\Faction.cs" />
     <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\LoanedShip.cs" />
@@ -87,20 +87,27 @@
     <Compile Include="Services\QuestService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Queries\AddFaction.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\AddNewBounty.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\AddNewFeedback.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Queries\AddReputation.sql" />
+    <Content Include="Queries\AddReputation.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\ConfigureDatabase.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\CreateNetWorthByPlayerId.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Queries\GetAllFactions.sql" />
+    <Content Include="Queries\GetAllFactions.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\GetAllFeedback.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -116,7 +123,9 @@
     <Content Include="Queries\GetNetWorthByPlayerId.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Queries\GetReputationByPlayerId.sql" />
+    <Content Include="Queries\GetReputationByPlayerId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\RemoveBountiesByPlayerId.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -129,7 +138,9 @@
     <Content Include="Queries\UpdatePlayerById.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Queries\UpdateReputationByPlayerId.sql" />
+    <Content Include="Queries\UpdateReputationByPlayerId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Penumbra.sqlite">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

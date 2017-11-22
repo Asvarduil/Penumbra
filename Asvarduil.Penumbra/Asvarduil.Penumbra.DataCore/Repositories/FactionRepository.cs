@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using Asvarduil.Penumbra.DataCore.Models;
 using Asvarduil.Penumbra.DataCore.Mappers;
@@ -57,6 +58,23 @@ namespace Asvarduil.Penumbra.DataCore.Repositories
         public static List<Faction> GetAll()
         {
             return Instance.RunFileQuery("Queries/GetAllFactions.sql", null).ToList();
+        }
+
+        public static void Create(string factionName, int id)
+        {
+            var parameters = new Dictionary<string, object>
+            {
+                { "Id", id },
+                { "Name", factionName },
+                { "CreateDate", DateTime.Now }
+            };
+
+            Instance.RunFileExecute("Queries/AddFaction.sql", parameters);
+
+            // If this does get called for some reason, we want to refetch our
+            // internal cache immediately.  Generally speaking, this method
+            // *REALLY* should not be called unless there's a darn good reason.
+            _factions = GetAll();
         }
 
         #endregion Accessors

@@ -131,5 +131,21 @@ namespace Asvarduil.Penumbra.Tests
 
             Assert.IsTrue(feedbacks.Count > 0);
         }
+
+        [TestMethod]
+        [TestCategory("Data Core")]
+        public void CanChangeReputation()
+        {
+            PlayerService.Create("UnitTest");
+
+            const string FACTION_NAME = "Coalition of Systems";
+            FactionRepository.Create(FACTION_NAME, 1);
+
+            var operationResult = PlayerService.ChangeFactionStanding("UnitTest", FACTION_NAME, 5);
+            Assert.IsTrue(operationResult.IsSuccessful, $"Could not change faction standing.  Reason: {operationResult.Message}");
+
+            var existingPlayer = PlayerService.GetByName("UnitTest");
+            Assert.IsTrue(existingPlayer.Reputations[0].Standing == 5);
+        }
     }
 }
