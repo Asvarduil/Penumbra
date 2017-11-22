@@ -15,7 +15,7 @@ namespace Asvarduil.Penumbra.StarMadeCore.ServerEventCommands
         // Death to other player:     
         // Death to environment:      
         // Death to ship by player:   
-        // Opened Inventory:          
+        // Opened Inventory:          N/A :(
         // Trigger Entered:           
         // Server Shutdown Completed: 
 

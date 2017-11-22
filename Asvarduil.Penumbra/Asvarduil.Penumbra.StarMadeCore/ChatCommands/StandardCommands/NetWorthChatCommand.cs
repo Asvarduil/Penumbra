@@ -7,9 +7,10 @@ namespace Asvarduil.Penumbra.StarMadeCore.ChatCommands
     {
         public bool IsAdminCommand => false;
         public string Token => "!NETWORTH";
-        public string HelpText => "Usage: !NETWORTH [ME | HELP].  !NETWORTH ME shows you your net worth."
-                                + " !NETWORTH HELP shows you this message.  Net Worth is gained by defeating"
-                                + " other players, or by simply playing on the server.";
+        public string HelpText => "Usage: !NETWORTH [ME | HELP].\n" 
+                                + "  !NETWORTH ME shows you your net worth.\n"
+                                + "  !NETWORTH HELP shows you this message.\n" 
+                                + "  Net Worth is gained by defeating other players, or by simply playing on the server.";
 
         public bool IsAuthorized(string usingPlayerName)
         {
