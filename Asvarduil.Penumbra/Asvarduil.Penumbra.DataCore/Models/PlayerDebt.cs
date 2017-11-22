@@ -9,6 +9,6 @@ namespace Asvarduil.Penumbra.DataCore.Models
         public int Value { get; set; }
         public int InterestRate { get; set; }
         public bool IsPaid { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }

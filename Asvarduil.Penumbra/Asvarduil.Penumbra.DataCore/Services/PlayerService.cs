@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using Asvarduil.Penumbra.DataCore.Repositories;
 using Asvarduil.Penumbra.DataCore.Models;
@@ -40,6 +41,8 @@ namespace Asvarduil.Penumbra.DataCore.Services
             NetWorthRepository.Create(netWorth);
             var createdNetWorth = NetWorthRepository.GetByPlayerId(createdPlayer.Id);
 
+            // Reputations will be initialized the first time they change.
+
             // Build the player.
             createdPlayer.NetWorth = createdNetWorth;
             createdPlayer.Bounties = new List<Bounty>();
@@ -66,8 +69,13 @@ namespace Asvarduil.Penumbra.DataCore.Services
             if (existingBounties == null)
                 existingBounties = new List<Bounty>();
 
+            var existingReputations = ReputationRepository.GetByPlayerId(existingPlayer.Id);
+            if (existingReputations == null)
+                existingReputations = new List<Reputation>();
+
             existingPlayer.NetWorth = existingNetWorth;
             existingPlayer.Bounties = existingBounties;
+            existingPlayer.Reputations = existingReputations;
 
             return existingPlayer;
         }
@@ -248,11 +256,47 @@ namespace Asvarduil.Penumbra.DataCore.Services
         /// <summary>
         /// Gets all logged on players.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>All logged-on players.</returns>
         public static List<Player> GetLoggedOnPlayers()
         {
             var result = PlayerRepository.GetLoggedOnPlayers();
             return result;
+        }
+
+        /// <summary>
+        /// Adds a certain amount of fame (or disrepute) for a player, to their relationship with a faction.
+        /// </summary>
+        /// <param name="playerName">Name of the player to change reputation for</param>
+        /// <param name="factionName">Faction with which reputation will be changed</param>
+        /// <param name="amount">Amount by which reputation will change</param>
+        public static void ChangeFactionStanding(string playerName, string factionName, int amount)
+        {
+            var player = PlayerRepository.GetByName(playerName);
+            if (player == null)
+                return;
+
+            var faction = FactionRepository.GetByName(factionName);
+            if (faction == null)
+                return;
+
+            var relevantReputation = player.Reputations.FirstOrDefault(r => r.Id == faction.Id);
+            if (relevantReputation == null)
+            {
+                relevantReputation = new Reputation
+                {
+                    PlayerId = player.Id,
+                    FactionId = faction.Id,
+                    Standing = amount
+                };
+
+                ReputationRepository.Create(relevantReputation);
+            }
+            else
+            {
+                relevantReputation.Standing += amount;
+
+                ReputationRepository.Update(relevantReputation);
+            }
         }
     }
 }

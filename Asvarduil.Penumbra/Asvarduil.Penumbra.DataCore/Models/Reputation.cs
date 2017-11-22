@@ -7,7 +7,7 @@ namespace Asvarduil.Penumbra.DataCore.Models
         public int Id { get; set; }
         public int PlayerId { get; set; }
         public int FactionId { get; set; }
-        public int Reputation { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public int Standing { get; set; }  // TODO: Rename DB field to Standing.
+        public DateTime? UpdatedDate { get; set; }
     }
 }

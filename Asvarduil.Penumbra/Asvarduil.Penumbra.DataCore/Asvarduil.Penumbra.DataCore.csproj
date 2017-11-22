@@ -49,26 +49,37 @@
     <Compile Include="Extensions\SqlDataReaderExtensions.cs" />
     <Compile Include="Extensions\SqliteDataReaderExtensions.cs" />
     <Compile Include="Mappers\BountyMapping.cs" />
+    <Compile Include="Mappers\FactionMapper.cs" />
     <Compile Include="Mappers\FeedbackMapping.cs" />
     <Compile Include="Mappers\ISQLiteModelMapper.cs" />
     <Compile Include="Mappers\ISQLModelMapper.cs" />
+    <Compile Include="Mappers\LoanedShipMapper.cs" />
     <Compile Include="Mappers\NetWorthMapping.cs" />
+    <Compile Include="Mappers\PlayerDebtMapping.cs" />
     <Compile Include="Mappers\PlayerMapping.cs" />
+    <Compile Include="Mappers\ReputationMapper.cs" />
     <Compile Include="Models\Bounty.cs" />
     <Compile Include="Models\BountyPostResult.cs" />
+    <Compile Include="Models\Faction.cs" />
     <Compile Include="Models\Feedback.cs" />
+    <Compile Include="Models\LoanedShip.cs" />
     <Compile Include="Models\NetWorth.cs" />
     <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\PlayerDebt.cs" />
     <Compile Include="Models\PlayerQuest.cs" />
     <Compile Include="Models\Quest.cs" />
     <Compile Include="Models\QuestItemReward.cs" />
     <Compile Include="Models\QuestObjective.cs" />
+    <Compile Include="Models\QuestReputationReward.cs" />
+    <Compile Include="Models\Reputation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BountyRepository.cs" />
+    <Compile Include="Repositories\FactionRepository.cs" />
     <Compile Include="Repositories\FeedbackRepository.cs" />
     <Compile Include="Repositories\NetWorthRepository.cs" />
     <Compile Include="Repositories\PenumbraRepository.cs" />
     <Compile Include="Repositories\PlayerRepository.cs" />
+    <Compile Include="Repositories\ReputationRepository.cs" />
     <Compile Include="Repositories\SqliteRepositoryBase.cs" />
     <Compile Include="Repositories\SqlRepositoryBase.cs" />
     <Compile Include="Services\FeedbackService.cs" />
@@ -82,12 +93,14 @@
     <Content Include="Queries\AddNewFeedback.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\AddReputation.sql" />
     <Content Include="Queries\ConfigureDatabase.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\CreateNetWorthByPlayerId.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\GetAllFactions.sql" />
     <Content Include="Queries\GetAllFeedback.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -103,6 +116,7 @@
     <Content Include="Queries\GetNetWorthByPlayerId.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\GetReputationByPlayerId.sql" />
     <Content Include="Queries\RemoveBountiesByPlayerId.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -115,6 +129,7 @@
     <Content Include="Queries\UpdatePlayerById.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\UpdateReputationByPlayerId.sql" />
     <None Include="packages.config" />
     <None Include="Penumbra.sqlite">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

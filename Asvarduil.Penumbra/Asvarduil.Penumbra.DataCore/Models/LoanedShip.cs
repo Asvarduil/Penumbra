@@ -10,6 +10,6 @@ namespace Asvarduil.Penumbra.DataCore.Models
         public string ShipName { get; set; }
         public int Value { get; set; }
         public bool IsPaid { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
     }
 }
