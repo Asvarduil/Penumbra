@@ -65,6 +65,8 @@
     <Compile Include="ServerEventCommands\PlayerLoggedInEvent.cs" />
     <Compile Include="ServerEventCommands\PlayerLoggedOutEvent.cs" />
     <Compile Include="ServerEventCommands\ServerEventCommander.cs" />
+    <Compile Include="SqlInterop\SqlInteropService.cs" />
+    <Compile Include="SqlInterop\SqlQuery.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
